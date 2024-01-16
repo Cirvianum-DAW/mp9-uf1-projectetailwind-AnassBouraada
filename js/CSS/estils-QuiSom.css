@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  background-color: #0d2033;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 60px;
+}
+
+.Espai-1 {
+  display: flex;
+}
+
+/**
+CSS de el login
+/*/
+
+.Espai-Esquerre {
+  background: url(../Imatges/Fonsformulari.png);
+  background-repeat: no-repeat;
+  background-size: 960px 574px;
+  width: 50%;
+  height: 574px;
+}
+
+.Espai-Esquerre .Login {
+  width: 400px;
+  height: 340px;
+  background-color: #0a141d;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px 30px;
+  border-top: 4px solid aquamarine;
+  color: white;
+}
+
+.Espai-Esquerre .Login h5 {
+  margin: 0%;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 22px;
+}
+
+.Espai-Esquerre .Login .Caracters {
+  width: 100%;
+  border: 1px solid aquamarine;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: #252323;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.Espai-Esquerre .Login .Boto {
+  width: 100%;
+  height: 40px;
+  background: #2fb4cc;
+  border: none;
+  color: white;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.Espai-Esquerre .Login p {
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.Espai-Esquerre .Login a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.Espai-Esquerre .Login a:hover {
+  text-decoration: underline;
+}
+
+/**
+CSS de Historia
+/*/
+
+.Espai-Dreta {
+  width: 50%;
+  height: 552px;
+}
+
+.Espai-Dreta .Historia {
+  width: 100%;
+  height: 287px;
+  background-color: #0a2647;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.Espai-Dreta .Historia h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid;
+  color: #fff;
+}
+
+.Espai-Dreta .Historia .Text-Historia p {
+  width: 320px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.Espai-Dreta .Historia .Text-Historia {
+  float: left;
+}
+
+.Historia .Carta {
+  width: 50%;
+  margin-top: 10px;
+  height: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+  cursor: default;
+  display: flex;
+  float: right;
+}
+.Carta:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.Carta img {
+  width: 100%;
+  height: 180px;
+}
+.Carta .Text-Carta {
+  padding: 15px;
+  text-align: center;
+}
+.Carta .Text-Carta h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #7a7a7a;
+}
+
+.Carta .Text-Carta a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+.Carta .Text-Carta a:hover {
+  background: #2fb4cc;
+  color: #fff;
+}
+
+/**
+CSS de la ubicacio
+/*/
+
+.Ubicacio {
+  width: 759px;
+  height: 287px;
+  border: none;
+}
+
+/**
+CSS de el Footer
+/*/
+
+.Footer {
+  width: 100%;
+  background-color: #0a141d;
+}
+.Footer .espai-1 {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 13px;
+}
+.Footer .espai-1 .box figure {
+  width: 100%;
+  height: 100%;
+}
+.Footer .espai-1 .box figure img {
+  width: 150px;
+}
+.Footer .espai-1 .box h2 {
+  color: #fff;
+  margin-bottom: 13px;
+  font-size: 20px;
+}
+.Footer .espai-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.Footer .espai-1 .xarxes-socials a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.Footer .espai-1 .xarxes-socials a:hover {
+  color: aqua;
+}
+.Footer .espai-2 {
+  background-color: #0a1a2a;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+}
+.Footer .espai-2 small {
+  font-size: 15px;
+}

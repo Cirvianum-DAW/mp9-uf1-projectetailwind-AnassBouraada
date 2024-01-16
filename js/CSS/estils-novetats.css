@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #0d2033;
+}
+
+.Espai-Novetats {
+  width: 100%;
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+}
+header {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 70px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.Novetats {
+  width: 100%;
+  margin: 40px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 15px rgb(255, 255, 255);
+  transition: all 400ms ease;
+  cursor: default;
+}
+.Novetats:hover {
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 1);
+  transform: translateY(-3%);
+}
+.Novetats img {
+  width: 100%;
+  height: 210px;
+}
+.Novetats .Text-Novetats {
+  padding: 15px;
+  text-align: center;
+}
+.Novetats .Text-Novetats h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #7a7a7a;
+}
+.Novetats .Text-Novetats p {
+  line-height: 1.5;
+  color: #6a6a6a;
+  font-size: 14px;
+}
+.Novetats .Text-Novetats a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+.Novetats .Text-Novetats a:hover {
+  background: #2fb4cc;
+  color: #fff;
+}
