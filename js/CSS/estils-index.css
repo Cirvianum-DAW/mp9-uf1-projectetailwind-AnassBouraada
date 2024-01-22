@@ -44,9 +44,7 @@ CSS de el sidebar
 */
 
 .Sidebar {
-  position: absolute;
   width: 250px;
-  height: 44%;
   background: #0a141d;
 }
 .Sidebar header {
