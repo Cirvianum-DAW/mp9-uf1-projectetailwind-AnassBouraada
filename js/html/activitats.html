@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Activitats</title>
     <meta name="author" content="Anass Bouraada" />
-    <link rel="stylesheet" href="CSS/estils-activitats.css" />
+    <!-- Afegit Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="shortcut icon"
       href="Imatges/FaviconActivitats.png"
@@ -21,113 +25,170 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header><h1>ACTIVITATS</h1></header>
-    <div class="Espai-Activitats">
-      <div class="Menu">
-        <div class="Espai-Menu">
-          <nav class="Sidebar">
-            <header>GOLD GYM A.B</header>
-            <ul>
-              <li>
-                <a href="#" target="_blank"
-                  ><i class="fas fa-link"></i>Entrenos Personals</a
-                >
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  ><i class="fas fa-link"></i>Cursets de Natacio</a
-                >
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  ><i class="fas fa-link"></i>Spinning</a
-                >
-              </li>
-            </ul>
-          </nav>
+
+  <body class="font-sans flex flex-col min-h-screen">
+    <!-- Encapçalat (Header) -->
+    <header class="bg-gray-600 p-4">
+      <div class="flex items-center justify-between">
+        <div class="text-yellow-500">
+          <h1 class="text-4xl font-serif">GOLD GYM A.B</h1>
+        </div>
+        <div class="ml-4">
+          <img
+            src="../Imatges/Logo.png"
+            class="w-30 h-20"
+            alt="Logo Gold Gym"
+          />
         </div>
       </div>
-      <div class="Horari">
-        <div class="contenidor">
-          <table>
-            <thead>
+    </header>
+
+    <div class="flex flex-grow">
+    <!-- Sidebar -->
+    <div class="Navbar w-1/2 bg-darkslateblue p-4">
+      <div class="text-3xl text-center bg-blue-800 py-4 font-bold text-white">
+          MENU
+      </div>
+      <ul class="mt-28 flex flex-col items-center">
+          <li class="mx-auto mb-4">
+              <a href="entrenosPersonals.html" target="_blank" class="flex items-center justify-center py-2 text-3xl hover:bg-gray-700 font-bold">
+                  <i class="fas fa-dumbbell mr-2"></i>Entrenos Personals
+              </a>
+          </li>
+          <li class="mx-auto mb-4">
+              <a href="natacio.html" target="_blank" class="flex items-center justify-center py-2 hover:bg-gray-700 text-3xl hover:bg-gray-700 font-bold ">
+                  <i class="fas fa-swimmer mr-2"></i>Cursets de Natacio
+              </a>
+          </li>
+          <li class="mx-auto">
+              <a href="spinning.html" target="_blank" class="flex items-center justify-center py-2 hover:bg-gray-700 text-3xl hover:bg-gray-700 font-bold">
+                  <i class="fas fa-bicycle mr-2"></i>Spinning
+              </a>
+          </li>
+      </ul>
+  </div>
+    
+  
+      <!-- Horari -->
+      <div class="Horari w-1/2 bg-blueviolet p-4">
+        <div class="contenidor border border-white">
+          <table class="font-sans w-full">
+            <thead class="bg-blue-800 text-white">
               <tr>
-                <th>Dilluns</th>
-                <th>Dimarts</th>
-                <th>Dimecres</th>
-                <th>Dijous</th>
-                <th>Divendres</th>
-              </tr>
+                <th class="p-4">Dia/Hora</th>
+                <th class="p-4">07:00 08:00</th>
+                <th class="p-4">08:00 09:00</th>
+                <th class="p-4">09:00 10:00</th>
+                <th class="p-4">10:00 11:00</th>
+                <th class="p-4">15:00 16:00</th>
+                <th class="p-4">16:00 17:00</th>
+                <th class="p-4">17:00 18:00</th>
+            </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Aquagim</td>
-                <td>Ciclisme</td>
-                <td>Body Pump</td>
-                <td>Body Balance</td>
-                <td>Circuit Intervalic</td>
+                <td class="p-4 font-bold">Dilluns</td>
+                <td class="hora p-4 bg-gray-200">Body Pump</td>
+                <td class="hora p-4 bg-gray-300">Aiguagim</td>
+                <td class="hora p-4 bg-gray-400">Abdominals</td>
+                <td class="hora p-4 bg-gray-500">Aiguadolça</td>
+                <td class="hora p-4 bg-gray-600">GAC</td>
+                <td class="hora p-4 bg-gray-700">Pilates</td>
+                <td class="hora p-4 bg-gray-800">GAC</td>
               </tr>
               <tr>
-                <td>Aiguadolça</td>
-                <td>Funcional</td>
-                <td>WOD</td>
-                <td>Tono-step</td>
-                <td>Zumba</td>
+                <td class="p-4 font-bold">Dimarts</td>
+                <td class="hora p-4 bg-gray-200">Body Pump</td>
+                <td class="hora p-4 bg-gray-300">Aiguagim</td>
+                <td class="hora p-4 bg-gray-400">Abdominals</td>
+                <td class="hora p-4 bg-gray-500">Aiguadolça</td>
+                <td class="hora p-4 bg-gray-600">GAC</td>
+                <td class="hora p-4 bg-gray-700">Pilates</td>
+                <td class="hora p-4 bg-gray-800">GAC</td>
               </tr>
               <tr>
-                <td>Gac</td>
-                <td>Strong</td>
-                <td>Aquagim</td>
-                <td>WOD</td>
-                <td>Zumba</td>
+                <td class="p-4 font-bold">Dimecres</td>
+                <td class="hora p-4 bg-gray-200">Body Pump</td>
+                <td class="hora p-4 bg-gray-300">Aiguagim</td>
+                <td class="hora p-4 bg-gray-400">Abdominals</td>
+                <td class="hora p-4 bg-gray-500">Aiguadolça</td>
+                <td class="hora p-4 bg-gray-600">GAC</td>
+                <td class="hora p-4 bg-gray-700">Pilates</td>
+                <td class="hora p-4 bg-gray-800">GAC</td>
               </tr>
               <tr>
-                <td>Ciclisme</td>
-                <td>Funcional</td>
-                <td>Aiguadolça</td>
-                <td>Aiguadolça</td>
-                <td>Aquagim</td>
+                <td class="p-4 font-bold">Dijous</td>
+                <td class="hora p-4 bg-gray-200">Body Pump</td>
+                <td class="hora p-4 bg-gray-300">Aiguagim</td>
+                <td class="hora p-4 bg-gray-400">Abdominals</td>
+                <td class="hora p-4 bg-gray-500">Aiguadolça</td>
+                <td class="hora p-4 bg-gray-600">GAC</td>
+                <td class="hora p-4 bg-gray-700">Pilates</td>
+                <td class="hora p-4 bg-gray-800">GAC</td>
               </tr>
               <tr>
-                <td>Ciclisme</td>
-                <td>Funcional</td>
-                <td>Aquagim</td>
-                <td>Zumba</td>
-                <td>Ciclisme</td>
+                <td class="p-4 font-bold">Divendres</td>
+                <td class="hora p-4 bg-gray-200">Body Pump</td>
+                <td class="hora p-4 bg-gray-300">Aiguagim</td>
+                <td class="hora p-4 bg-gray-400">Abdominals</td>
+                <td class="hora p-4 bg-gray-500">Aiguadolça</td>
+                <td class="hora p-4 bg-gray-600">GAC</td>
+                <td class="hora p-4 bg-gray-700">Pilates</td>
+                <td class="hora p-4 bg-gray-800">GAC</td>
               </tr>
               <tr>
-                <td>Zumba</td>
-                <td>Funcional</td>
-                <td>Funcional</td>
-                <td>Ciclisme</td>
-                <td>Aiguadolça</td>
+                <td class="p-4 font-bold">Dissabte</td>
+                <td class="hora p-4 bg-gray-200">Body Pump</td>
+                <td class="hora p-4 bg-gray-300">Aiguagim</td>
+                <td class="hora p-4 bg-gray-400">Abdominals</td>
+                <td class="hora p-4 bg-gray-500">Aiguadolça</td>
+                <td class="hora p-4 bg-gray-600">GAC</td>
+                <td class="hora p-4 bg-gray-700">Pilates</td>
+                <td class="hora p-4 bg-gray-800">GAC</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-bold">Diumenge</td>
+                <td class="hora p-4 bg-gray-200">Body Pump</td>
+                <td class="hora p-4 bg-gray-300">Aiguagim</td>
+                <td class="hora p-4 bg-gray-400">Abdominals</td>
+                <td class="hora p-4 bg-gray-500">Aiguadolça</td>
+                <td class="hora p-4 bg-gray-600">GAC</td>
+                <td class="hora p-4 bg-gray-700">Pilates</td>
+                <td class="hora p-4 bg-gray-800">GAC</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
-    <footer class="Footer">
-      <div class="espai-1">
-        <div class="box">
+
+    <!-- Peu de pàgina (Footer) -->
+    <footer class="Footer bg-blue-900 text-white p-4 mt-auto">
+      <div
+        class="espai-1 sm:flex sm:flex-col md:flex-row md:justify-between md:max-w-1200 md:mx-auto"
+      >
+        <div class="box mb-4 md:mb-0 md:mr-4">
           <figure>
             <a href="#">
-              <img src="Imatges/Logo-Menu.png" alt="Logo de gold gym" />
+              <img
+                src="../Imatges/Logo-Menu.png"
+                alt="Logo de gold gym"
+                class="w-32 h-32"
+              />
             </a>
           </figure>
         </div>
-        <div class="box">
-          <h2>SOBRE NOSALTRES</h2>
-          <p>La instalacio es va inaugurar el 23 de abril de 2017</p>
+        <div class="box mb-4 md:mb-0 md:w-1/3">
+          <h2 class="text-2xl mb-2">SOBRE NOSALTRES</h2>
+          <p>La instal·lació es va inaugurar el 23 d'abril de 2017</p>
           <p>
-            Gold Gym A.B es un dels millors equipaments d'esport i benestar de
-            la comarca d'osona
+            Gold Gym A.B és un dels millors equipaments d'esport i benestar de
+            la comarca d'Osona
           </p>
         </div>
-        <div class="box">
-          <h2>SEGUEIXNOS</h2>
-          <div class="xarxes-socials">
+        <div class="box md:w-1/3">
+          <h2 class="text-2xl mb-2">SEGUEIX-NOS</h2>
+          <div class="xarxes-socials flex space-x-2">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-twitter"></a>
@@ -135,7 +196,7 @@
           </div>
         </div>
       </div>
-      <div class="espai-2">
+      <div class="espai-2 bg-blue-800 p-4 text-center text-white">
         <small>&copy; 2022 <b>Gold Gym</b> - Tots els Drets Reservats.</small>
       </div>
     </footer>
