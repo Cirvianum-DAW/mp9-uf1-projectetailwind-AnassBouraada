@@ -1,14 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 100%;
-  font-family: "Open Sans", sans-serif;
-  text-decoration: none;
-}
 
 /*
 CSS de el sidebar
