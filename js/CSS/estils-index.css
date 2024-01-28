@@ -10,42 +10,11 @@
   text-decoration: none;
 }
 
-/**
-CSS de el Titol i Logo
-/*/
-
-.Titol-logo {
-  width: 100%;
-  height: 200px;
-  background-color: #0d2033;
-  left: 500%;
-}
-
-.Logo {
-  width: 30%;
-  height: 165px;
-
-}
-
-.Titol-Txt {
-  text-align: center;
-  letter-spacing: 5px;
-  font-size: 50px;
-  color: gold;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.Titol {
-  position: relative;
-  top: 20px;
-}
-
 /*
 CSS de el sidebar
 */
 
 .Sidebar {
-  width: 250px;
   background: #0a141d;
 }
 .Sidebar header {
@@ -76,113 +45,4 @@ ul li:hover a {
 
 .Sidebar ul a i {
   margin-right: 16px;
-}
-
-/*
-CSS de Imatges
-*/
-.Imatges {
-  margin-left: 250px;
-  width: 1780px;
-  height: 412px;
-  overflow: auto;
-}
-
-.Imatges .Imatges-Mida {
-  width: 1755px;
-  height: 500px;
-  display: block;
-}
-
-/*
-CSS de Novetats
-*/
-
-.Novetats {
-  width: 100%;
-  background-color: #042331;
-  display: flex;
-  justify-content: center;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  align-items: center;
-}
-
-.titol-novetats h1 {
-  letter-spacing: 5px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #fff;
-  margin-left: 130px;
-  margin-right: 190px;
-}
-
-.txt {
-  color: #fff;
-  margin-right: 300px;
-  margin-left: 20px;
-  margin-right: 190px;
-}
-
-.txt a {
-  color: #2fb4cc;
-}
-.Novetats img {
-  width: 250px;
-}
-
-/**
-CSS de el Footer
-/*/
-
-.Footer {
-  width: 100%;
-  background-color: #0a141d;
-}
-.Footer .espai-1 {
-  width: 100%;
-  max-width: 1200px;
-  display: grid;
-  margin: auto;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 13px;
-}
-.Footer .espai-1 .box figure {
-  width: 100%;
-  height: 100%;
-}
-.Footer .espai-1 .box figure img {
-  width: 150px;
-}
-.Footer .espai-1 .box h2 {
-  color: #fff;
-  margin-bottom: 13px;
-  font-size: 20px;
-}
-.Footer .espai-1 .box p {
-  color: #efefef;
-  margin-bottom: 10px;
-}
-.Footer .espai-1 .xarxes-socials a {
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  margin-right: 10px;
-  background-color: #0d2033;
-  text-align: center;
-  transition: all 300ms ease;
-}
-.Footer .espai-1 .xarxes-socials a:hover {
-  color: aqua;
-}
-.Footer .espai-2 {
-  background-color: #0a1a2a;
-  padding: 15px;
-  text-align: center;
-  color: #fff;
-}
-.Footer .espai-2 small {
-  font-size: 15px;
 }
